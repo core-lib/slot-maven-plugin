@@ -1,8 +1,8 @@
-# Slot [![](https://jitpack.io/v/core-lib/slot.svg)](https://jitpack.io/#core-lib/slot)
+# Slot [![](https://jitpack.io/v/core-lib/slot-maven-plugin.svg)](https://jitpack.io/#core-lib/slot-maven-plugin)
 
 Spring Boot 可插件化拓展改造器，让 Spring-Boot 应用支持加载外部 jar 包，实现插件化拓展。
 
-GitHub: https://github.com/core-lib/slot
+GitHub: https://github.com/core-lib/slot-maven-plugin
 
 #### Slot: 在计算机行业指的就是周边元件扩展插槽。
 
@@ -11,7 +11,7 @@ Spring-Boot 项目打包后是一个FatJar 即把所有依赖的第三方jar也�
 
 那么问题是要想加载外部化 jar 就只能打包期间把 jar 依赖进去，无法实现可插拔式插件化拓展。
 
-[Slot](https://github.com/core-lib/slot) 就是一个可以将 Spring-Boot 项目升级为可支持加载外部 jar 的 Maven 插件。
+[Slot](https://github.com/core-lib/slot-maven-plugin) 就是一个可以将 Spring-Boot 项目升级为可支持加载外部 jar 的 Maven 插件。
 
 ## 原理说明
 
@@ -22,7 +22,7 @@ Spring-Boot 项目打包后是一个FatJar 即把所有依赖的第三方jar也�
 4. JarLauncher 构建 ClassLoader 并反射调用 META-INF/MANIFEST.MF 中的 Start-Class 类的 main 方法，通常为项目中的 Application 类 
 5. Application 类的 main 方法调用 SpringApplication.run(Application.class, args); 以最终启动应用
 
-[Slot](https://github.com/core-lib/slot) 的核心原理是：
+[Slot](https://github.com/core-lib/slot-maven-plugin) 的核心原理是：
 1. 拓展 org.springframework.boot.loader.JarLauncher 实现根据启动命令参数读取外部 jar 包并且加入至 classpath 中
 2. 修改 META-INF/MANIFEST.MF 中的 Main-Class 为拓展的 JarLauncher
 
