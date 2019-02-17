@@ -6,7 +6,7 @@
 
     <groupId>com.github.core-lib</groupId>
     <artifactId>slot-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>maven-plugin</packaging>
     <name>slot-maven-plugin</name>
     <url>https://github.com/slot-maven-plugin</url>

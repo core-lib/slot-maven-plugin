@@ -47,7 +47,7 @@ public class BootSlotter extends FileSlotter implements Slotter {
                 } else if (entry.getName().equals("META-INF/MANIFEST.MF")) {
                     Manifest manifest = new Manifest(zis);
                     Attributes attributes = manifest.getMainAttributes();
-                    attributes.putValue("Main-Class", "io.slot.core.BootLauncher");
+                    attributes.putValue("Main-Class", "io.slot.BootLauncher");
                     JarArchiveEntry jarArchiveEntry = new JarArchiveEntry(entry.getName());
                     jarArchiveEntry.setTime(entry.getTime());
                     zos.putArchiveEntry(jarArchiveEntry);
