@@ -46,7 +46,7 @@ Spring-Boot 项目打包后是一个FatJar 即把所有依赖的第三方jar也�
             <plugin>
                 <groupId>com.github.core-lib</groupId>
                 <artifactId>slot-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1</version>
                 <executions>
                     <execution>
                         <goals>
