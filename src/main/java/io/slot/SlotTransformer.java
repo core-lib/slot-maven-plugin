@@ -67,7 +67,7 @@ public class SlotTransformer extends AbstractMojo {
         Plugin plugin = plugins.get("org.springframework.boot:spring-boot-maven-plugin");
         // 非Spring-Boot项目/模块
         if (plugin == null) {
-            throw new MojoFailureException("Could not transform not spring-boot project");
+            throw new MojoFailureException("Could not transform non-spring-boot project");
         }
         // Spring-Boot项目/模块
         else {
