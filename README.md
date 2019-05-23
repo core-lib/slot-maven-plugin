@@ -46,7 +46,7 @@ Spring-Boot 项目打包后是一个FatJar 即把所有依赖的第三方jar也�
             <plugin>
                 <groupId>com.github.core-lib</groupId>
                 <artifactId>slot-maven-plugin</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.2</version>
                 <executions>
                     <execution>
                         <goals>
@@ -181,6 +181,7 @@ ANT 表达式通配符说明
 
 
 ## 版本记录
+* 1.0.2 升级[LoadKit](https://github.com/core-lib/loadkit)依赖版本解决ANT表达式无法正确匹配**/*通配符的问题
 
 * 1.0.1 bug 修复
 
